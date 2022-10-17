@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+#app header {
+  padding: 0 15px;
+}
+#app header #constraint {
+  display: flex;
+  margin: 0 auto;
+  max-width: 960px;
+}
+#app header #constraint #left {
+  position: relative;
+}
+#app header #constraint #left #logo {
+  height: 30px;
+  margin: 22px 35px 22px 0;
+  width: auto;
+}
+#app header #constraint #left #logo circle {
+  fill: #2de476;
+}
+#app header #constraint #left #play {
+  bottom: 55px;
+  right: -31px;
+  position: absolute;
+  z-index: 2;
+}
+#app header #constraint #left #play button {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 4px 6px rgba(0,0,0,0.1);
+  color: #2de476;
+  cursor: pointer;
+  font-size: 0.85em;
+  line-height: 0;
+  padding: 25px;
+}
+#app header #constraint #left #dotmatrix {
+  bottom: 65px;
+  right: -30px;
+  position: absolute;
+}
+#app header #constraint #media {
+  border-radius: 0 0 40px 40px;
+  height: 475px;
+  min-width: 35%;
+  z-index: 1;
+}
+#app header #constraint #media img {
+  border-radius: inherit;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#app header #constraint #right {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+#app header #constraint #right nav {
+  align-items: center;
+  display: flex;
+  flex: 0 0 1;
+  justify-content: space-between;
+  margin: 0 0 0 40px;
+  max-height: 80px;
+  text-transform: capitalize;
+  width: 100%;
+}
+#app header #constraint #right nav a {
+  color: inherit;
+  display: block;
+  padding: 10px 10px 0;
+  text-decoration: none;
+}
+#app header #constraint #right nav a::after {
+  background-color: #2de476;
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 9px auto;
+  width: 0%;
+}
+#app header #constraint #right nav a:hover::after {
+  -webkit-animation: 0.1s ease-in-out border-grow forwards;
+          animation: 0.1s ease-in-out border-grow forwards;
+}
+@-webkit-keyframes border-grow {
+  30% {
+    width: 50%;
+  }
+  100% {
+    margin: 9px auto;
+    width: 100%;
+  }
+}
+@keyframes border-grow {
+  30% {
+    width: 50%;
+  }
+  100% {
+    margin: 9px auto;
+    width: 100%;
+  }
+}
+#app header #constraint #right nav button {
+  background-color: #fff;
+  border: solid #2de476 1px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-transform: inherit;
+}
+#app header #constraint #right nav button:hover {
+  background-color: #2de476;
+  color: #fff;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+#app header #constraint #right #cta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  position: relative;
+  width: 100%;
+}
+#app header #constraint #right #cta h1 {
+  font-size: 2.5em;
+  line-height: 1.4em;
+  margin: 0 0 20px 0;
+  text-transform: capitalize;
+}
+#app header #constraint #right #cta p {
+  line-height: 1.75em;
+  margin: 0;
+}
+#app header #constraint #right #cta .dotmatrix {
+  bottom: -38px;
+  position: absolute;
+  right: 0;
+}
+#app header #constraint #right #cta form {
+  align-items: center;
+  display: flex;
+  margin-right: 40px;
+  width: 100%;
+  z-index: 1;
+}
+#app header #constraint #right #cta form input {
+  border: none;
+  border-radius: 25px;
+  box-shadow: 15px 10px 30px rgba(0,0,0,0.04);
+  flex-grow: 1;
+  padding: 15px 10px;
+  text-align: center;
+}
+#app header #constraint #right #cta form input::-moz-placeholder {
+  color: rgba(0,0,0,0.25);
+}
+#app header #constraint #right #cta form input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.25);
+}
+#app header #constraint #right #cta form input::placeholder {
+  color: rgba(0,0,0,0.25);
+}
+#app header #constraint #right #cta form button {
+  background-color: #2de476;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 15px;
+  padding: 15px 25px;
+}
+#app #dashed-divider {
+  height: auto;
+  margin: 40px 0;
+  width: 100%;
+}
+#app #dashed-divider path {
+  stroke: #2de476;
+}
+#app #services {
+  position: relative;
+}
+#app #services #constraint {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 15px;
+}
+#app #services #heading {
+  max-width: 300px;
+}
+#app #services #heading p {
+  line-height: 1.5em;
+}
+#app #services #service-list {
+  max-width: 400px;
+}
+#app #services #service-list .service {
+  display: flex;
+}
+#app #services #service-list .service:not(:first-child) {
+  margin-top: 30px;
+}
+#app #services #service-list .service .icon {
+  border-radius: 50%;
+  box-shadow: 5px 18px 30px rgba(0,0,0,0.07);
+  color: #2de476;
+  height: 1.85ch;
+  margin-right: 28px;
+  padding: 12px;
+  width: 1.85ch;
+}
+#app #services #service-list .service .content h3 {
+  margin: 10px 0;
+}
+#app #services #squiggle {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: absolute;
+  width: 55%;
+}
+#app #services #squiggle path {
+  stroke: #2de476;
+}
+#app #services #squiggle rect {
+  fill: #2de476;
+}
+#app #menu #constraint {
+  margin: 100px auto 0;
+  max-width: 960px;
+}
+#app #menu #heading {
+  position: relative;
+}
+#app #menu #heading #content {
+  max-width: 400px;
+}
+#app #menu #heading #content h2 {
+  font-size: 1.5em;
+}
+#app #menu #heading #content p {
+  line-height: 1.5em;
+}
+#app #menu #heading #square {
+  height: auto;
+  position: absolute;
+  right: 12%;
+  top: 30px;
+  width: 50px;
+}
+#app #menu #heading #square rect {
+  fill: #2de476;
+}
+#app #menu #menu-items {
+  display: grid;
+  grid-column-gap: 35px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+}
+#app #menu #menu-items > div {
+  border: solid 1px rgba(0,0,0,0.15);
+  border-radius: 30px;
+}
+#app #menu #menu-items > div .media {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  display: block;
+  height: 150px;
+}
+#app #menu #menu-items > div .media img {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#app #menu #menu-items > div .title {
+  color: inherit;
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#app #menu #menu-items > div .info {
+  display: flex;
+  font-size: 0.9em;
+  justify-content: space-between;
+  padding: 8px 12px 20px;
+}
+#app #app {
+  margin-top: 100px;
+  position: relative;
+}
+#app #app #left-square path,
+#app #app #right-square path {
+  fill: #2de476;
+}
+#app #app #left-square {
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: -20px;
+  width: 12%;
+}
+#app #app #constraint {
+  align-items: center;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 960px;
+}
+#app #app #constraint #media img {
+  max-width: 100%;
+}
+#app #app #constraint #details h2 {
+  font-size: 2em;
+  line-height: 1.35em;
+}
+#app #app #constraint #details p {
+  color: rgba(0,0,0,0.7);
+  line-height: 1.75em;
+}
+#app #app #right-square {
+  bottom: -70px;
+  height: auto;
+  right: 0;
+  position: absolute;
+  width: 12%;
+}
+#app footer {
+  margin-top: 85px;
+  position: relative;
+}
+#app footer #squiggle,
+#app footer #dots {
+  position: absolute;
+}
+#app footer #squiggle {
+  height: auto;
+  left: -12%;
+  top: -100px;
+}
+#app footer #dots {
+  left: -2%;
+  top: 10px;
+}
+#app footer #constraint {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  max-width: 960px;
+}
+#app footer #constraint #contact {
+  grid-column: span 2;
+  min-height: 100px;
+}
+#app footer #constraint #contact #logo {
+  height: 30px;
+  width: auto;
+}
+#app footer #constraint #contact address {
+  font-style: normal;
+  line-height: 1.75em;
+  margin-top: 15px;
+}
+#app footer #constraint .section h2 {
+  color: rgba(0,0,0,0.8);
+  font-size: 1.25em;
+  margin: 0 0 15px 0;
+}
+#app footer #constraint .section a {
+  color: rgba(0,0,0,0.75);
+  display: block;
+  line-height: 1.85em;
+  text-decoration: none;
+}
+#app footer #constraint #bottom-bar {
+  border-top: solid rgba(0,0,0,0.1) 1px;
+  grid-column: 1/-1;
+  margin-top: 75px;
+  padding: 20px 0;
+}
