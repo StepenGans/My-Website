@@ -165,7 +165,7 @@ body {
 #app header #constraint #right #cta form input::placeholder {
   color: rgba(0,0,0,0.25);
 }
-#app header #constraint #right #cta form button {
+#app header #constraint #right #cta button {
   background-color: #2de476;
   border: none;
   border-radius: 25px;
