@@ -119,23 +119,7 @@ body {
   color: #fff;
   transition: background-color 0.1s ease, color 0.1s ease;
 }
-#app header #constraint #right #cta {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 50px;
-  position: relative;
-  width: 100%;
-}
-#app header #constraint #right #cta h1 {
-  font-size: 2.5em;
-  line-height: 1.4em;
-  margin: 0 0 20px 0;
-  text-transform: capitalize;
-}
-#app header #constraint #right #cta p {
-  line-height: 1.75em;
-  margin: 0;
-}
+
 
 #app header #constraint #right #cta button {
   background-color: #2de476;
