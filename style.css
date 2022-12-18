@@ -136,35 +136,7 @@ body {
   line-height: 1.75em;
   margin: 0;
 }
-#app header #constraint #right #cta .dotmatrix {
-  bottom: -38px;
-  position: absolute;
-  right: 0;
-}
-#app header #constraint #right #cta form {
-  align-items: center;
-  display: flex;
-  margin-right: 40px;
-  width: 100%;
-  z-index: 1;
-}
-#app header #constraint #right #cta form input {
-  border: none;
-  border-radius: 25px;
-  box-shadow: 15px 10px 30px rgba(0,0,0,0.04);
-  flex-grow: 1;
-  padding: 15px 10px;
-  text-align: center;
-}
-#app header #constraint #right #cta form input::-moz-placeholder {
-  color: rgba(0,0,0,0.25);
-}
-#app header #constraint #right #cta form input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.25);
-}
-#app header #constraint #right #cta form input::placeholder {
-  color: rgba(0,0,0,0.25);
-}
+
 #app header #constraint #right #cta button {
   background-color: #2de476;
   border: none;
